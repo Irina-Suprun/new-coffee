@@ -1,0 +1,29 @@
+.app-header {
+    display: flex;
+    min-height: 45px;
+    
+    &__logo {
+    margin-right: auto;
+    }
+
+    &__login {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    &__login-btn {
+        color: white;
+        background-color: #3C6BFF;
+        width: 174px;
+        height: 100%;
+        border-radius: 25px;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 40px;
+    }
+
+    // &__button-action {}
+
+}
