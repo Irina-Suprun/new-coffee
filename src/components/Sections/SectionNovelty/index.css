@@ -1,0 +1,30 @@
+.section-novelty__box {
+  display: flex;
+  gap: 30px;
+}
+.section-novelty__picture {
+  width: 100%;
+}
+.section-novelty__describe {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.section-novelty__extra-info {
+  color: #0039DD;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.section-novelty__title {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.section-novelty__click {
+  margin-left: 0px;
+  margin-top: 15px;
+  padding: 15px 45px;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  background-color: #FF9900;
+  border-radius: 25px;
+}/*# sourceMappingURL=index.css.map */

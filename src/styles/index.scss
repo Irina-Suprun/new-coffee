@@ -27,10 +27,11 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 30px 0px;
-  
+  padding: 15px 0px;
+
   @include mobile {
     width: 480px;
+    padding: 30px 30px;
   }
   
   @include tablet {
@@ -40,6 +41,9 @@
   @include desktop {
     width: 1200px;
   }
+}
+.section {
+  margin-top: 90px;
 }
 // Reset
 h1,
@@ -59,8 +63,9 @@ img {
 }
 
 button {
-    display: block;
-    margin: 0 auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     border: none;
     background-color: transparent;
