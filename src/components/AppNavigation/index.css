@@ -1,0 +1,8 @@
+.app-navigation {
+  display: flex;
+}
+.app-navigation__list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */
