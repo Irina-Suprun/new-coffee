@@ -3,7 +3,8 @@
     min-height: 45px;
     
     &__logo {
-    margin-right: auto;
+    margin: auto;
+    margin-left: 0px;
     }
 
     &__login {
@@ -23,7 +24,4 @@
         display: flex;
         gap: 40px;
     }
-
-    // &__button-action {}
-
 }
