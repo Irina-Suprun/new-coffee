@@ -15,13 +15,21 @@
     &__login-btn {
         color: white;
         background-color: #3C6BFF;
-        width: 174px;
-        height: 100%;
-        border-radius: 25px;
     }
 
     &__actions {
         display: flex;
         gap: 40px;
+    }
+
+    &__button-action {
+        background-color: transparent;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        width: 46px;
+        height: 46px;
     }
 }

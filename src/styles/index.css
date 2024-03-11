@@ -3,6 +3,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  font-weight: 400;
   color: #282828;
 }
 
@@ -32,6 +33,12 @@
   margin-top: 90px;
 }
 
+.title {
+  display: block;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
 h1,
 h2,
 h3,
@@ -48,17 +55,20 @@ img {
   height: auto;
 }
 
-button {
+.button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   border: none;
-  background-color: transparent;
+  width: 174px;
+  height: 46px;
+  border-radius: 50px;
 }
 
 .list {
   list-style: none;
+  padding: 0px;
 }
 
 .link {

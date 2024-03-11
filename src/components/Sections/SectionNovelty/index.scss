@@ -20,20 +20,15 @@
         margin-bottom: 15px;
     }
 
-    &__title {
-        display: block;
-        font-size: 40px;
-        margin-bottom: 15px;
-    }
-
     &__click {
         margin-left: 0px;
         margin-top: 15px;
-        padding: 15px 45px;
-        display: inline-block;
-        text-align: center;
         color: white;
         background-color: #FF9900;
-        border-radius: 25px;
+
+        &::after {
+            margin-left: 10px;
+            content: ">";
+        }
     }
 }
