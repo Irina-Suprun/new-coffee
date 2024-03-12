@@ -1,0 +1,35 @@
+.subscription-section {
+  display: flex;
+  justify-content: space-between;
+}
+.subscription-section__box {
+  max-width: 380px;
+}
+.subscription-section__title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.subscription-section__input {
+  border-radius: 25px 0px 0px 25px;
+  color: #777777;
+  border: 1px solid #777777;
+  height: 44px;
+  padding: 0px 25px;
+  margin-top: 15px;
+}
+.subscription-section__button {
+  border-radius: 0px 25px 25px 0px;
+  color: #F8F8F8;
+  background-color: black;
+  height: 46px;
+  padding: 0px 25px;
+  border: none;
+  cursor: pointer;
+}
+.subscription-section__text {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.subscription-section__logo {
+  margin-left: auto;
+}/*# sourceMappingURL=index.css.map */
