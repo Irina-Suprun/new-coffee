@@ -3,12 +3,12 @@
         <div class="container">
             <div class="order-section__title-box">
                 <strong class="title">Check our sales for popular products</strong>
-                <a href="" class="order-section__sales-link link">All sales</a>
+                <a href="" class="order-section__all-sales link">All sales</a>
             </div>
             <ul class="order-section__list list">
                 <li class="order-section__item">
                     <div class="order-section__discount">
-                        <p>-30%</p>
+                        <span>-30%</span>
                     </div>
                     <img src="../../../assets/product1.png" alt="product1-photo"
                     class="order-section__image">
@@ -36,7 +36,7 @@
                     <img src="../../../assets/product2.png" alt="product2-photo"
                     class="order-section__image">
                     <div>
-                        <strong class="order-section__title-product">Brazil Blend Arabica</strong>
+                        <strong class="order-section__title-product">Brazil Blend Arabia</strong>
                         <p>500 g</p>
                         <ul class="order-section__price list">
                             <li class="order-section__price-sale">$ 13.99</li>

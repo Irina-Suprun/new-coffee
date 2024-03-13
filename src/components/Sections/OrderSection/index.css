@@ -5,10 +5,10 @@
   display: flex;
   justify-content: space-between;
 }
-.order-section__sales-link {
+.order-section__all-sales {
   color: #FF3939;
 }
-.order-section__sales-link::after {
+.order-section__all-sales::after {
   margin-left: 10px;
   content: ">";
 }

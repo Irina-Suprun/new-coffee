@@ -12,10 +12,10 @@
       <button class="app-header__login-btn button">Sign in</button>
     </div>
     <div class="app-header__actions">
-      <button class="app-header__button-action">
+      <button class="app-header__button-action button">
         <img src="../../assets/search1.svg" alt="search_icon">
       </button>
-      <button class="app-header__button-action">
+      <button class="app-header__button-action button">
         <img src="../../assets/basket.svg" alt="basket_icon">
       </button>
     </div>

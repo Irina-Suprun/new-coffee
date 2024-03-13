@@ -20,11 +20,6 @@
 }
 .app-header__button-action {
   background-color: transparent;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border: none;
-  width: 46px;
-  height: 46px;
+  max-width: 46px;
+  max-height: 46px;
 }/*# sourceMappingURL=index.css.map */
