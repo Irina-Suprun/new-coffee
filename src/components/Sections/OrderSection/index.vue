@@ -20,7 +20,11 @@
                             <li>$ 10.49</li>
                         </ul>
                         <div class="order-section__btn-box">
-                            <button class="order-section__counter button">1</button>
+                            <div class="order-section__counter">
+                                <button class="order-section__counter-active">+</button>
+                                <span class="order-section__counter-number">1</span>
+                                <button class="order-section__counter-active">-</button>
+                            </div>
                             <button class="order-section__btn-add button">Add to card</button>
                         </div>
                     </div>
@@ -39,7 +43,11 @@
                             <li>$ 11.89</li>
                         </ul>
                         <div class="order-section__btn-box">
-                            <button class="order-section__counter button">1</button>
+                            <div class="order-section__counter">
+                                <button class="order-section__counter-active">+</button>
+                                <span class="order-section__counter-number">1</span>
+                                <button class="order-section__counter-active">-</button>
+                            </div>
                             <button class="order-section__btn-add button">Add to card</button>
                         </div>
                     </div>
@@ -58,7 +66,11 @@
                             <li>$ 12.38</li>
                         </ul>
                         <div class="order-section__btn-box">
-                            <button class="order-section__counter button">1</button>
+                            <div class="order-section__counter">
+                                <button class="order-section__counter-active">+</button>
+                                <span class="order-section__counter-number">1</span>
+                                <button class="order-section__counter-active">-</button>
+                            </div>
                             <button class="order-section__btn-add button">Add to card</button>
                         </div>
                     </div>

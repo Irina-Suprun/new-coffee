@@ -40,6 +40,7 @@
 .order-section__image {
   margin: auto;
   padding-top: 10px;
+  padding-bottom: 15px;
 }
 .order-section__title-product {
   font-size: 20px;
@@ -61,16 +62,23 @@
   width: 180px;
 }
 .order-section__counter {
+  display: flex;
   background-color: #FFFFFF;
   margin-bottom: 15px;
+  justify-content: space-around;
+  width: 174px;
+  height: 46px;
+  border-radius: 50px;
 }
-.order-section__counter::before {
-  margin-right: 40px;
-  content: "+";
+.order-section__counter-active {
+  padding: 10px 30px;
+  border: none;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
 }
-.order-section__counter::after {
-  margin-left: 40px;
-  content: "-";
+.order-section__counter-number {
+  margin: auto;
 }
 .order-section__btn-add {
   background-color: #FF9900;

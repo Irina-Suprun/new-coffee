@@ -46,6 +46,7 @@
     &__image {
         margin: auto;
         padding-top: 10px;
+        padding-bottom: 15px;
     }
 
     &__title-product {
@@ -72,18 +73,25 @@
     }
     
     &__counter {
+        display: flex;
         background-color: #FFFFFF;
         margin-bottom: 15px;
+        justify-content: space-around;
+        width: 174px;
+        height: 46px;
+        border-radius: 50px;
+    }
 
-        &::before {
-            margin-right: 40px;
-            content: "+";
-        }
-        
-        &::after {
-            margin-left: 40px;
-            content: "-";
-        }
+    &__counter-active {
+        padding: 10px 30px;
+        border: none;  
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__counter-number {
+        margin: auto;
     }
 
     &__btn-add {

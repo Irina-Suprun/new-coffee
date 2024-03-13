@@ -28,11 +28,11 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 15px 15px;
+  padding: 0px 15px;
 
   @include mobile {
     width: 480px;
-    padding: 15px 30px;
+    padding: 0px 30px;
   }
   
   @include tablet {
@@ -45,7 +45,7 @@
 }
 
 .section {
-  margin-top: 90px;
+  padding-bottom: 60px;
 }
 
 .title {
@@ -55,12 +55,7 @@
 }
 
 // Reset
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+body,
 p {
     margin: 0;
 }

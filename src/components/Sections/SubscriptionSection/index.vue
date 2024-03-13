@@ -1,5 +1,5 @@
 <template>
-    <section  class="subscription-section container">
+    <section  class="subscription-section container section">
         <div class="subscription-section__box">
             <form>
                 <label for="email" class="subscription-section__title">
