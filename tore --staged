@@ -1,0 +1,60 @@
+[33mcommit 724db9c51b131cf0b04c14066bdc8c1dea08c52b[m[33m ([m[1;36mHEAD -> [m[1;32mthird-and-fourth-sections[m[33m, [m[1;31morigin/third-and-fourth-sections[m[33m)[m
+Author: Iryna Suprun <irishka.am21@gmail.com>
+Date:   Mon Mar 11 16:55:12 2024 +0200
+
+    created third section and fixed some moments in the header and the first section
+
+[33mcommit 8fede16c35a0c6cb6d6a3ae29b4a22656c7a2dd8[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 1f2c9d9 626bde2
+Author: Stas <yurkanis.s@gmail.com>
+Date:   Sun Mar 10 10:52:26 2024 +0200
+
+    Merge pull request #2 from Irina-Suprun/footer
+    
+    Footer
+
+[33mcommit 626bde2bdabbba88a8a730381e228893888b4121[m[33m ([m[1;31morigin/footer[m[33m, [m[1;32mfooter[m[33m)[m
+Merge: cd94b07 1f2c9d9
+Author: Iryna Suprun <irishka.am21@gmail.com>
+Date:   Fri Mar 8 16:21:21 2024 +0200
+
+    resolved conflicts
+
+[33mcommit 1f2c9d97bce627c7e42d051755d2e66bddb70a90[m
+Merge: 274f754 f98e4c7
+Author: Stas <yurkanis.s@gmail.com>
+Date:   Fri Mar 8 16:03:58 2024 +0200
+
+    Merge pull request #1 from Irina-Suprun/header-and-first-section
+    
+    created vue application and added header + first section and correspo…
+
+[33mcommit f98e4c7192bf3d1d92d16126cad93371025240fb[m[33m ([m[1;31morigin/header-and-first-section[m[33m)[m
+Author: Iryna Suprun <irishka.am21@gmail.com>
+Date:   Fri Mar 8 13:57:43 2024 +0200
+
+    fixed header and first section
+
+[33mcommit 70d262ceb1dbb77ab04efd997499774cb8a90580[m
+Author: Iryna Suprun <irishka.am21@gmail.com>
+Date:   Thu Mar 7 18:22:57 2024 +0200
+
+    fixed header and first section
+
+[33mcommit cd94b0786dce5428a6e9333240b3b9b4e7624625[m
+Author: Iryna Suprun <irishka.am21@gmail.com>
+Date:   Thu Mar 7 15:24:48 2024 +0200
+
+    created the footer(without responsive function
+
+[33mcommit 7559a63b96b21057463436e4706ccee71725d78b[m[33m ([m[1;32msecond-section[m[33m)[m
+Author: Iryna Suprun <irishka.am21@gmail.com>
+Date:   Tue Mar 5 21:51:28 2024 +0200
+
+    created vue application and added header + first section and corresponding files for it
+
+[33mcommit 274f75406fe8c4a6f83cee7e374d0c223deeb5c9[m
+Author: Iryna Suprun <irishka.am21@gmail.com>
+Date:   Sat Mar 2 21:43:00 2024 +0200
+
+    init

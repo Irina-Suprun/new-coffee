@@ -1,0 +1,42 @@
+.subscription-section {
+    display: flex;
+    justify-content: space-between;
+
+    &__box {
+        max-width: 380px;
+    }
+
+    &__title {
+       font-weight: 600;
+       font-size: 18px;
+    }
+
+    &__input {
+        border-radius: 25px 0px 0px 25px;
+        color: #777777;
+        border: 1px solid #777777;
+        height: 44px;
+        padding: 0px 25px;
+        margin-top: 15px;
+    }
+
+    &__button {
+        border-radius: 0px 25px 25px 0px;
+        color: #F8F8F8;
+        background-color: black;
+        height: 46px;
+        padding: 0px 25px;
+
+        border: none;
+        cursor: pointer;
+    }
+
+    &__text {
+        font-weight: 700;
+        margin-bottom: 15px;  
+    }
+
+    &__logo {
+        margin-left: auto;
+    }
+}
