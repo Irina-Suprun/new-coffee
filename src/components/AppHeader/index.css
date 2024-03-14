@@ -1,6 +1,17 @@
 .app-header {
+  height: 45px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .app-header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.app-header__box {
   display: flex;
-  min-height: 45px;
 }
 .app-header__logo {
   margin: auto;
@@ -21,5 +32,5 @@
 .app-header__button-action {
   background-color: transparent;
   max-width: 46px;
-  max-height: 46px;
+  max-height: 40px;
 }/*# sourceMappingURL=index.css.map */

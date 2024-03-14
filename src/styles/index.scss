@@ -27,31 +27,32 @@
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin: 0px;
   padding: 0px 15px;
 
   @include mobile {
-    width: 480px;
+    width: 420px;
     padding: 0px 30px;
   }
   
   @include tablet {
-    width: 768px;
+    width: 708px;
   }
   
   @include desktop {
-    width: 1200px;
+    width: 1140px;
   }
 }
 
 .section {
-  padding-bottom: 60px;
+  padding-bottom: 35px;
+  padding-top: 35px;
 }
 
 .title {
   display: block;
   font-size: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 // Reset
@@ -73,7 +74,7 @@ img {
     cursor: pointer;
     border: none;
     width: 174px;
-    height: 46px;
+    height: 40px;
     border-radius: 50px;
 }
 

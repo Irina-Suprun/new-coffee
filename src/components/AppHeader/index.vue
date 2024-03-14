@@ -1,6 +1,7 @@
 <template>
-  <header class="app-header container">
-    <div class="app-header__logo">
+  <header class="app-header">
+    <div class="app-header__box container">
+      <div class="app-header__logo">
       <strong>
         <a href="" class="app-header__logo link">
           <img src="../../assets/logo.svg" alt="picture-logo" class="app-header__icon">
@@ -18,6 +19,7 @@
       <button class="app-header__button-action button">
         <img src="../../assets/basket.svg" alt="basket_icon">
       </button>
+    </div>
     </div>
   </header>
 </template>
