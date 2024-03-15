@@ -32,9 +32,9 @@
 }
 .section-novelty__title {
   margin-top: 13px;
+  margin-bottom: 18px;
 }
 .section-novelty__click {
-  margin-left: 0px;
   margin-top: 15px;
   color: white;
   background-color: #FF9900;
