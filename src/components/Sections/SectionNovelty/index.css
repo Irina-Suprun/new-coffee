@@ -1,6 +1,9 @@
+.section-novelty {
+  margin-top: 15px;
+}
 @media screen and (min-width: 1200px) {
   .section-novelty {
-    margin-top: 100px;
+    margin-top: 135px;
   }
 }
 @media screen and (min-width: 768px) {
