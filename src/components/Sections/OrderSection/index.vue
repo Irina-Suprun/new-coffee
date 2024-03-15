@@ -19,14 +19,12 @@
                             <li class="order-section__price-sale">$ 14.99</li>
                             <li>$ 10.49</li>
                         </ul>
-                        <div class="order-section__btn-box">
-                            <div class="order-section__counter">
-                                <button class="order-section__counter-active">+</button>
-                                <span class="order-section__counter-number">1</span>
-                                <button class="order-section__counter-active">-</button>
-                            </div>
-                            <button class="order-section__btn-add button">Add to card</button>
+                        <div class="order-section__counter">
+                            <button class="order-section__counter-active">+</button>
+                            <span class="order-section__counter-number">1</span>
+                            <button class="order-section__counter-active">-</button>
                         </div>
+                        <button class="order-section__btn-add button">Add to card</button>
                     </div>
                 </li>
                 <li class="order-section__item">
@@ -42,14 +40,12 @@
                             <li class="order-section__price-sale">$ 13.99</li>
                             <li>$ 11.89</li>
                         </ul>
-                        <div class="order-section__btn-box">
-                            <div class="order-section__counter">
-                                <button class="order-section__counter-active">+</button>
-                                <span class="order-section__counter-number">1</span>
-                                <button class="order-section__counter-active">-</button>
-                            </div>
-                            <button class="order-section__btn-add button">Add to card</button>
+                        <div class="order-section__counter">
+                            <button class="order-section__counter-active">+</button>
+                            <span class="order-section__counter-number">1</span>
+                            <button class="order-section__counter-active">-</button>
                         </div>
+                        <button class="order-section__btn-add button">Add to card</button>
                     </div>
                 </li>
                 <li class="order-section__item">
@@ -65,14 +61,12 @@
                             <li class="order-section__price-sale">$ 16.50</li>
                             <li>$ 12.38</li>
                         </ul>
-                        <div class="order-section__btn-box">
-                            <div class="order-section__counter">
-                                <button class="order-section__counter-active">+</button>
-                                <span class="order-section__counter-number">1</span>
-                                <button class="order-section__counter-active">-</button>
-                            </div>
-                            <button class="order-section__btn-add button">Add to card</button>
+                        <div class="order-section__counter">
+                            <button class="order-section__counter-active">+</button>
+                            <span class="order-section__counter-number">1</span>
+                            <button class="order-section__counter-active">-</button>
                         </div>
+                        <button class="order-section__btn-add button">Add to card</button>
                     </div>
                 </li>
             </ul>

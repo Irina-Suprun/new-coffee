@@ -1,14 +1,29 @@
 .subscription-section {
-    display: flex;
-    justify-content: space-between;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
 
     &__box {
-        max-width: 380px;
+        margin-bottom: 15px;
+        
+        @media screen and (min-width: 768px) {
+            max-width: 350px;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 380px;
+        }
     }
 
     &__title {
-       font-weight: 600;
-       font-size: 18px;
+        font-weight: 600;
+        font-size: 14px;
+       @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
     }
 
     &__input {
@@ -26,14 +41,17 @@
         background-color: black;
         height: 46px;
         padding: 0px 25px;
-
         border: none;
         cursor: pointer;
     }
 
     &__text {
         font-weight: 700;
-        margin-bottom: 15px;  
+        margin-bottom: 15px;
+
+        @media screen and (min-width: 768px) {
+        }
+
     }
 
     &__logo {

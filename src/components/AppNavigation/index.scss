@@ -2,8 +2,11 @@
     display: flex; 
     
     &__list {
-        display: flex;
-        gap: 40px;
-        align-items: center;
+  
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
     }
 }

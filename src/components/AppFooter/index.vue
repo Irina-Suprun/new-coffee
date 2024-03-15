@@ -1,9 +1,9 @@
 <template>
   <footer class="app-footer">
     <div class="app-footer__content container">
-      <div class="app-footer__logo">
+      <div class="app-footer__logo-box">
         <strong>
-          <a href="" class="app-footer__logo link">
+          <a href="" class="link">
           <img src="../../assets/footer-logo.svg" alt="picture-logo" class="app-footer__icon">
           </a>
         </strong>
