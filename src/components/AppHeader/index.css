@@ -1,25 +1,28 @@
 .app-header {
-  height: 45px;
   margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 15px;
 }
 @media screen and (min-width: 1200px) {
   .app-header {
     margin-top: 30px;
-    margin-bottom: 30px;
+    height: 45px;
   }
 }
-.app-header__box {
+@media screen and (min-width: 768px) {
+  .app-header__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.app-header__position-box {
   display: flex;
+  gap: 15px;
+  align-items: center;
 }
-.app-header__logo {
-  margin: auto;
-  margin-left: 0px;
-}
-.app-header__login {
-  margin-left: 40px;
-  margin-right: 40px;
+@media screen and (min-width: 1200px) {
+  .app-header__position-box {
+    gap: 40px;
+  }
 }
 .app-header__login-btn {
   color: white;
@@ -27,10 +30,15 @@
 }
 .app-header__actions {
   display: flex;
-  gap: 40px;
+  gap: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .app-header__actions {
+    gap: 40px;
+  }
 }
 .app-header__button-action {
   background-color: transparent;
-  max-width: 46px;
+  max-width: 40px;
   max-height: 40px;
 }/*# sourceMappingURL=index.css.map */

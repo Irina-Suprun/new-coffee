@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <AppHeader /> -->
+    <AppHeader />
     <SectionNovelty />
     <!-- <OrderSection /> -->
     <!-- <SubscriptionSection /> -->
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-// import AppHeader from './components/AppHeader/index.vue';
+import AppHeader from './components/AppHeader/index.vue';
 import SectionNovelty from './components/Sections/SectionNovelty/index.vue';
 // import OrderSection from './components/Sections/OrderSection/index.vue';
 // import SubscriptionSection from './components/Sections/SubscriptionSection/index.vue';
@@ -18,7 +18,7 @@ import SectionNovelty from './components/Sections/SectionNovelty/index.vue';
 export default {
   name: 'App',
   components: {
-    // AppHeader,
+    AppHeader,
     SectionNovelty,
     // OrderSection,
     // SubscriptionSection,

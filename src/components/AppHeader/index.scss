@@ -1,26 +1,28 @@
 .app-header {
-    height: 45px;
     margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 15px;
     
     @media screen and (min-width: 1200px) {
-    margin-top: 30px;
-    margin-bottom: 30px;
+        margin-top: 30px;
+        height: 45px;
     }
 
     &__box {
-        display: flex;
-    }
-    
-    &__logo {
-    margin: auto;
-    margin-left: 0px;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
-    &__login {
-        margin-left: 40px;
-        margin-right: 40px;
+    &__position-box {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        @media screen and (min-width: 1200px) {
+          gap: 40px;  
+        }
     }
 
     &__login-btn {
@@ -30,14 +32,16 @@
 
     &__actions {
         display: flex;
-        gap: 40px;
+        gap: 15px;
+        
+        @media screen and (min-width: 1200px) {
+            gap: 40px;
+        }
     }
 
     &__button-action {
         background-color: transparent;
-        max-width: 46px;
+        max-width: 40px;
         max-height: 40px;
     }
-
-    ;
 }
