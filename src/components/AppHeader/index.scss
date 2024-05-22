@@ -1,15 +1,28 @@
 .app-header {
-    display: flex;
-    min-height: 45px;
+    margin-top: 15px;
     
-    &__logo {
-    margin: auto;
-    margin-left: 0px;
+    @media screen and (min-width: 1200px) {
+        margin-top: 30px;
+        height: 45px;
     }
 
-    &__login {
-        margin-left: 40px;
-        margin-right: 40px;
+    &__box {
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__position-box {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        @media screen and (min-width: 1200px) {
+          gap: 40px;  
+        }
     }
 
     &__login-btn {
@@ -19,12 +32,16 @@
 
     &__actions {
         display: flex;
-        gap: 40px;
+        gap: 15px;
+        
+        @media screen and (min-width: 1200px) {
+            gap: 40px;
+        }
     }
 
     &__button-action {
         background-color: transparent;
-        max-width: 46px;
-        max-height: 46px;
+        max-width: 40px;
+        max-height: 40px;
     }
 }

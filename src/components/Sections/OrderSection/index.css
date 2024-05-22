@@ -4,6 +4,17 @@
 .order-section__title-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .order-section__title-box {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .order-section__title-box {
+    margin-bottom: 40px;
+  }
 }
 .order-section__all-sales {
   color: #FF3939;
@@ -13,14 +24,36 @@
   content: ">";
 }
 .order-section__list {
+  margin: 0px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+  .order-section__list {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
 }
 .order-section__item {
   position: relative;
   background-color: #F2F2F2;
   border-radius: 50px;
-  padding: 50px 80px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 170px;
+}
+@media screen and (min-width: 768px) {
+  .order-section__item {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .order-section__item {
+    padding: 50px 80px;
+    width: 210px;
+  }
 }
 .order-section__discount {
   position: absolute;
@@ -28,14 +61,20 @@
   right: 25px;
   background-color: #FF3939;
   color: #F0F0F0;
-  font-size: 20px;
   font-weight: 600;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .order-section__discount {
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+  }
 }
 .order-section__image {
   margin: auto;
@@ -58,16 +97,15 @@
   text-decoration: line-through;
   color: #FF3939;
 }
-.order-section__btn-box {
-  width: 180px;
-}
 .order-section__counter {
   display: flex;
   background-color: #FFFFFF;
   margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-around;
   width: 174px;
-  height: 46px;
+  height: 45px;
   border-radius: 50px;
 }
 .order-section__counter-active {

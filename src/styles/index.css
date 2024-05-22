@@ -9,34 +9,44 @@
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin: 0px;
   padding: 0px 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 420px;
     padding: 0px 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 708px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1140px;
   }
 }
 
 .section {
-  padding-bottom: 60px;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 70px;
+  }
 }
 
 .title {
   display: block;
-  font-size: 40px;
-  margin-bottom: 15px;
+  font-size: 30px;
+  text-align: left;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 40px;
+  }
 }
 
 body,
@@ -57,7 +67,7 @@ img {
   cursor: pointer;
   border: none;
   width: 174px;
-  height: 46px;
+  height: 45px;
   border-radius: 50px;
 }
 
