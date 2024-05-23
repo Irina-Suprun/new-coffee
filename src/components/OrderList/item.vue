@@ -3,7 +3,7 @@
         <div class="order-section__discount">
             <span>{{ itemData.discount }}</span>
         </div>
-        <img :src="itemData.imageSrc" :alt="itemData.imageAlt" class="order-section__image" />
+        <img src="../../assets/product1.png" alt="product photo" class="order-section__image" />
         <div>
             <strong class="order-section__title-product">{{ itemData.productName }}</strong>
             <p>{{ itemData.productWeight }}</p>

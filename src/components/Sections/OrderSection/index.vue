@@ -24,8 +24,6 @@ export default {
       listData: [
         {
           discount: '-30%',
-          imageSrc: '../../../assets/product1.png',
-          imageAlt: 'product photo',
           productName: 'Coffee Retail Packs',
           productWeight: '500 g',
           priceBeforeSale: '$ 14.99',
@@ -33,8 +31,6 @@ export default {
         },
         {
           discount: '-15%',
-          imageScr: '../../../assets/product2.png',
-          imageAlt: 'product photo',
           productName: 'Brazil Blend Arabia',
           productWeight: '500 g',
           priceBeforeSale: '$ 13.99',
@@ -42,8 +38,6 @@ export default {
         },
         {
           discount: '-25%',
-          imageScr: '../../../assets/product3.png',
-          imageAlt: 'product photo',
           productName: 'Unicorn Blood Dark',
           productWeight: '500 g',
           priceBeforeSale: '$ 16.50',
