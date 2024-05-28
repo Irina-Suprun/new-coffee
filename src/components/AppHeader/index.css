@@ -38,7 +38,22 @@
   }
 }
 .app-header__button-action {
+  position: relative;
   background-color: transparent;
   max-width: 40px;
   max-height: 40px;
+}
+.app-header__total-count {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF9900;
+  color: #F0F0F0;
+  font-size: 9px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 }/*# sourceMappingURL=index.css.map */
