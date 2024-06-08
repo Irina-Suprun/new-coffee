@@ -1,11 +1,7 @@
 <template>
-    <ul class="order-section__list list">
-        <OrderListItem
-        v-for="(item, index) in listData"
-        :key="index"
-        :itemData="item"
-        />
-    </ul>
+  <ul class="order-section__list list">
+    <OrderListItem v-for="(item, index) in listData" :key="index" :itemData="item" />
+  </ul>
 </template>
 
 <script>

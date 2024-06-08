@@ -19,10 +19,37 @@ export default new Vuex.Store({
         total: 0,
       },
     ],
+    products: [
+      {
+        id: 1,
+        discount: '-30%',
+        productName: 'Coffee Retail Packs',
+        productWeight: '500 g',
+        priceBeforeSale: '$ 14.99',
+        priceCurrent: '$ 10.49',
+      },
+      {
+        id: 2,
+        discount: '-15%',
+        productName: 'Brazil Blend Arabia',
+        productWeight: '500 g',
+        priceBeforeSale: '$ 13.99',
+        priceCurrent: '$ 11.89',
+      },
+      {
+        id: 3,
+        discount: '-25%',
+        productName: 'Unicorn Blood Dark',
+        productWeight: '500 g',
+        priceBeforeSale: '$ 16.50',
+        priceCurrent: '$ 12.38',
+      },
+    ],
   },
   getters: {
-    totalCountOfProducts:
+    getProductsToOrder:
       (state) => state.productsToOrder.reduce((total, product) => total + product.total, 0),
+    getProducts: (state) => state.products,
   },
   mutations: {
     SET_PRODUCTS_TO_ORDER(state, product) {
