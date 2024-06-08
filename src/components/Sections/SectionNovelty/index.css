@@ -27,6 +27,7 @@
   .section-novelty__describe {
     margin-top: auto;
     margin-bottom: auto;
+    width: 100%;
   }
 }
 .section-novelty__extra-info {
