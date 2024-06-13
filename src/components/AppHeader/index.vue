@@ -17,8 +17,7 @@
           </button>
           <button class="app-header__button-action button">
             <img src="../../assets/basket.svg" alt="basket_icon" />
-            <span class="app-header__total-count"> {{ getProductsToOrder }} </span>
-
+            <span class="app-header__total-count"> {{ getTotalOrder }} </span>
           </button>
         </div>
       </div>
@@ -36,7 +35,7 @@ export default {
     AppNavigation,
   },
   computed: {
-    ...mapGetters(['getProductsToOrder']),
+    ...mapGetters(['getTotalOrder']),
   },
 };
 </script>

@@ -1,21 +1,32 @@
 <template>
   <ul class="order-section__list list">
-    <OrderListItem v-for="(item, index) in listData" :key="index" :itemData="item" />
+    <OrderItem
+      v-for="item in ListProducts"
+      :key="item.id"
+      :product="item"
+      @update-product="updateProduct"
+    />
   </ul>
 </template>
 
 <script>
-import OrderListItem from './item.vue';
+import { mapMutations } from 'vuex';
+import OrderItem from './item.vue';
 
 export default {
   name: 'OrderList',
   components: {
-    OrderListItem,
+    OrderItem,
   },
   props: {
-    listData: {
+    ListProducts: {
       type: Array,
-      required: true,
+    },
+  },
+  methods: {
+    ...mapMutations(['SET_PRODUCTS_TO_ORDER']),
+    updateProduct(product) {
+      this.SET_PRODUCTS_TO_ORDER(product);
     },
   },
 };

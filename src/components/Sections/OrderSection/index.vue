@@ -5,13 +5,13 @@
         <strong class="title">Check our sales for popular products</strong>
         <a href="" class="order-section__all-sales link">All sales</a>
       </div>
-      <OrderList :listData="getProducts" />
+      <OrderList :ListProducts="getProducts" />
     </div>
   </section>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import OrderList from '../../OrderList/index.vue';
 
 export default {
@@ -21,6 +21,12 @@ export default {
   },
   computed: {
     ...mapGetters(['getProducts']),
+  },
+  methods: {
+    ...mapActions(['fetchProducts']),
+  },
+  mounted() {
+    this.fetchProducts();
   },
 };
 </script>
