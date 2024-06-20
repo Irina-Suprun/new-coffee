@@ -42,17 +42,20 @@
   border-radius: 50px;
   padding: 10px;
   margin-top: 20px;
-  width: 170px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 840px) {
   .order-section__item {
-    width: 200px;
+    padding: 10px 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .order-section__item {
+    padding: 50px 50px;
   }
 }
 @media screen and (min-width: 1200px) {
   .order-section__item {
     padding: 50px 80px;
-    width: 210px;
   }
 }
 .order-section__discount {

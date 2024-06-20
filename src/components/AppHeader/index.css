@@ -1,7 +1,7 @@
 .app-header {
   margin-top: 15px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .app-header {
     margin-top: 30px;
     height: 45px;
@@ -19,7 +19,7 @@
   gap: 15px;
   align-items: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .app-header__position-box {
     gap: 40px;
   }
@@ -32,7 +32,7 @@
   display: flex;
   gap: 15px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .app-header__actions {
     gap: 40px;
   }

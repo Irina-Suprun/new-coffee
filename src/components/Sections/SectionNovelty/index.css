@@ -1,7 +1,7 @@
 .section-novelty {
   margin-top: 15px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .section-novelty {
     margin-top: 135px;
   }
@@ -12,12 +12,14 @@
     gap: 30px;
   }
 }
-.section-novelty__picture {
-  width: 100%;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .section-novelty__picture {
     width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-novelty__picture {
+    max-width: 683px;
   }
 }
 .section-novelty__describe {
@@ -27,7 +29,6 @@
   .section-novelty__describe {
     margin-top: auto;
     margin-bottom: auto;
-    width: 100%;
   }
 }
 .section-novelty__extra-info {

@@ -1,7 +1,7 @@
 <template>
     <section  class="subscription-section container section">
         <div class="subscription-section__box">
-            <form>
+            <form class="subscription-section__form">
                 <label for="email" class="subscription-section__title">
                     Subscribe to get emails about our new products and sales
                     <input type="text" id="email" placeholder="Enter your email"

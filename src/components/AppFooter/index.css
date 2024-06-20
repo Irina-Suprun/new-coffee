@@ -19,7 +19,7 @@
     display: block;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .app-footer__logo-box {
     padding-top: 40px;
   }
@@ -44,7 +44,7 @@
     margin-top: 20px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .app-footer__nav {
     gap: 120px;
     margin-top: 40px;
@@ -83,7 +83,7 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .app-footer__copyright {
     padding-top: 86px;
   }

@@ -5,7 +5,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
         @media screen and (min-width: 768px) {
             margin-bottom: 20px;
         }
@@ -17,7 +17,7 @@
 
     &__all-sales {
         color: #FF3939;
-        
+
         &::after {
             margin-left: 10px;
             content: ">";
@@ -35,7 +35,7 @@
             flex-wrap: nowrap;
             gap: 30px;
         }
-        
+
     }
 
     &__item {
@@ -44,15 +44,17 @@
         border-radius: 50px;
         padding: 10px;
         margin-top: 20px;
-        width: 170px;
 
-        @media screen and (min-width: 768px) {
-            width: 200px;
+        @media screen and (min-width: 840px) {
+            padding: 10px 30px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding: 50px 50px;
         }
 
         @media screen and (min-width: 1200px) {
             padding: 50px 80px;
-            width: 210px;
         }
     }
 
@@ -78,7 +80,6 @@
     }
 
     &__image {
-
         margin: auto;
         padding-top: 10px;
         padding-bottom: 15px;
@@ -102,7 +103,7 @@
         text-decoration: line-through;
         color: #FF3939;
     }
-    
+
     &__counter {
         display: flex;
         background-color: #FFFFFF;
@@ -117,7 +118,7 @@
 
     &__counter-active {
         padding: 10px 30px;
-        border: none;  
+        border: none;
         background-color: transparent;
         justify-content: center;
         align-items: center;
