@@ -1,12 +1,23 @@
 .app-navigation {
-    display: flex; 
-    
+    display: flex;
+
     &__list {
-  
         @media screen and (min-width: 1024px) {
             display: flex;
             gap: 40px;
             align-items: center;
         }
+    }
+
+    &__item {
+        @media screen and (max-width: 1023px) {
+            padding: 10px;
+        }
+    }
+
+    &__current-page {
+        color: #FF9900;
+        border-bottom: 2px solid #FF9900;
+        padding-bottom: 10px;
     }
 }

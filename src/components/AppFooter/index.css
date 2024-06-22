@@ -62,6 +62,7 @@
 }
 .app-footer__link {
   color: #D9D9D9;
+  border: none;
 }
 .app-footer__social-list {
   display: flex;

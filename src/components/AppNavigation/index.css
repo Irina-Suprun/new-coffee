@@ -7,4 +7,14 @@
     gap: 40px;
     align-items: center;
   }
+}
+@media screen and (max-width: 1023px) {
+  .app-navigation__item {
+    padding: 10px;
+  }
+}
+.app-navigation__current-page {
+  color: #FF9900;
+  border-bottom: 2px solid #FF9900;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=index.css.map */

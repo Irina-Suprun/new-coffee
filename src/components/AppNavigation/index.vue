@@ -1,20 +1,22 @@
 <template>
-    <nav class="app-navigation">
-        <ul class="app-navigation__list list">
-            <li class="app-navigation__item">
-                <a href="" class="link">Catalogue</a>
-            </li>
-            <li class="app-navigation__item">
-                <a href="" class="link">Delivery</a>
-            </li>
-            <li class="app-navigation__item">
-                <a href="" class="link">Gift cards</a>
-            </li>
-            <li class="app-navigation__item">
-                <a href="" class="link">About us</a>
-            </li>
-        </ul>
-    </nav>
+  <nav class="app-navigation">
+    <ul class="app-navigation__list list">
+      <li class="app-navigation__item">
+        <router-link to="/" class="link"
+          >Catalogue</router-link
+        >
+      </li>
+      <li class="app-navigation__item">
+        <router-link to="/delivery" class="link">Delivery</router-link>
+      </li>
+      <li class="app-navigation__item">
+        <router-link to="/gift" class="link">Gift cards</router-link>
+      </li>
+      <li class="app-navigation__item">
+        <router-link to="/about" class="link">About us</router-link>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script>
@@ -23,4 +25,5 @@ export default {
 };
 </script>
 
-<style lang="scss" src="./index.scss" />
+<style lang="scss" src="./index.scss">
+</style>

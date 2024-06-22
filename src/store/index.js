@@ -7,20 +7,20 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    isBurgerActive: false,
+    isMenuActive: false,
     heroData: {},
     products: [],
     productsToOrder: [],
   },
   getters: {
-    isBurgerActive: (state) => state.isBurgerActive,
+    getMenuStatus: (state) => state.isMenuActive,
     getHeroData: (state) => state.heroData,
     getProducts: (state) => state.products,
     getTotalOrder: (state) => state.productsToOrder.reduce((total, current) => total + current.total, 0),
   },
   mutations: {
-    SET_BURGER_ACTIVE(state) {
-      state.isBurgerActive = !state.isBurgerActive;
+    SET_MENU_STATUS(state) {
+      state.isMenuActive = !state.isMenuActive;
     },
     SET_HERO_DATA(state, heroData) {
       state.heroData = heroData;
@@ -38,8 +38,8 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    setBurgerActive({ commit }) {
-      commit('SET_BURGER_ACTIVE');
+    setMenuStatus({ commit }) {
+      commit('SET_MENU_STATUS');
     },
     fetchHeroData({ commit }) {
       commit('SET_HERO_DATA', HeroData);

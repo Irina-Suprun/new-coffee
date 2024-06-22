@@ -7,10 +7,10 @@
         </a>
       </strong>
       <div class="app-header__position-box">
-        <div v-show="isBurgerActive || shouldActivateMenu" class="app-header__burger-box">
+        <div v-show="getMenuStatus || shouldActivateMenu" class="app-header__burger-box">
           <AppNavigation />
           <div class="app-header__login">
-            <button class="app-header__login-btn button">Sign in</button>
+            <button class="app-header__login-btn">Sign in</button>
           </div>
         </div>
         <div class="app-header__actions">
@@ -21,7 +21,7 @@
             <img src="../../assets/basket.svg" alt="basket_icon" />
             <span class="app-header__total-count"> {{ getTotalOrder }} </span>
           </button>
-          <button @click="activateBurger" class="app-header__burger">
+          <button @click="toggle" class="app-header__burger">
             <img src="../../assets/burger1.svg" alt="burger-menu" />
           </button>
         </div>
@@ -45,22 +45,23 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(['isBurgerActive']),
+    ...mapGetters(['getMenuStatus']),
     ...mapGetters(['getTotalOrder']),
     shouldActivateMenu() {
-      return this.windowWidth > 1024;
+      return this.windowWidth > 1023;
     },
   },
   methods: {
-    ...mapActions(['setBurgerActive']),
-    activateBurger() {
-      this.setBurgerActive();
+    ...mapActions(['setMenuStatus']),
+    toggle() {
+      this.setMenuStatus();
     },
     updateWindowSize() {
       this.windowWidth = window.innerWidth;
     },
   },
   mounted() {
+    window.addEventListener('load', this.updateWindowSize);
     window.addEventListener('resize', this.updateWindowSize);
   },
 };

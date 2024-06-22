@@ -1,9 +1,10 @@
 .app-header {
-    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     @media screen and (min-width: 1024px) {
-        margin-top: 30px;
-        height: 45px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     &__box {
@@ -32,13 +33,28 @@
         @media screen and (min-width: 1024px) {
             position: static;
             display: flex;
+            align-items: center;
             gap: 40px;
+            padding: 0;
         }
     }
 
     &__login-btn {
         color: white;
         background-color: #3C6BFF;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        width: 120px;
+        height: 40px;
+        border-radius: 50px;
+
+        @media screen and (min-width: 1024px) {
+            width: 174px;
+            height: 45px;
+        }
     }
 
     &__actions {

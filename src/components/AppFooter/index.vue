@@ -12,18 +12,18 @@
       <div class="app-footer__nav">
         <ul class="app-footer__nav-list">
           <li class="app-footer__item list">
-            <a href="" class="app-footer__link link">Catalogue</a>
+            <router-link to="/" class="app-footer__link link">Catalogue</router-link>
           </li>
           <li class="app-footer__item list">
-            <a href="" class="app-footer__link link">Gift cards</a>
+            <router-link :to="{ name: 'Gift-page' }" class="app-footer__link link">Gift cards</router-link>
           </li>
           <li class="app-footer__item list">
-            <a href="" class="app-footer__link link">Delivery</a>
+            <router-link to="/delivery" class="app-footer__link link">Delivery</router-link>
           </li>
         </ul>
         <ul class="app-footer__nav-list">
           <li class="app-footer__item list">
-            <a href="" class="app-footer__link link">About company</a>
+            <router-link to="/about" class="app-footer__link link">About company</router-link>
           </li>
           <li class="app-footer__item list">
             <a href="" class="app-footer__link link">Job opportunities</a>
