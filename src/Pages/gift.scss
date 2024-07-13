@@ -1,0 +1,9 @@
+.gift-page {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__collapse {
+        max-width: 400px;
+    }
+}
