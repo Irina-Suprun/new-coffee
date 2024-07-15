@@ -4,12 +4,20 @@
       <img src="../assets/gift-card.jpg" alt="gift-card">
     </div>
     <div class="gift-page__collapse">
-      <CollapseComponent>
-        <template #activator>
-          Click here
+      <CollapseComponent collapse @collapseEvent="collapseEvent">
+        <template #activator="{ isCollapsed, toggle }">
+          <AppButton @click.native="toggle" :title="title">
+            {{ title }}
+            <template v-if="isCollapsed">
+              +
+            </template>
+            <template v-else>
+              -
+            </template>
+          </AppButton>
         </template>
         <template #content>
-          <div :Collapse="Collapse" @collapseEvent="event">
+          <div>
             Shopping for someone else but not sure what to give them?
             Give them the gift of choice with a Ratio Gift
             Card.
@@ -19,31 +27,43 @@
           </div>
         </template>
       </CollapseComponent>
+
     </div>
   </div>
 </template>
 
 <script>
 import CollapseComponent from '../components/CollapseComponent/index.vue';
+import AppButton from '../components/AppButton/index.vue';
 
 export default {
   name: 'Gift-page',
-
   components: {
     CollapseComponent,
+    AppButton,
   },
   data() {
     return {
-
+      title: 'Click here',
     };
   },
   methods: {
-    event() {
-      console.log('abracadabra');
+    collapseEvent() {
+      console.log('here');
     },
   },
-
+  created() {
+    setTimeout(() => {
+      this.title = 'Wow';
+    }, 3000);
+  },
+  watch: {
+    title(val, oldVal) {
+      console.log(val, oldVal);
+    },
+  },
 };
+
 </script>
 
 <style lang="scss" src="../Pages/gift.scss" />

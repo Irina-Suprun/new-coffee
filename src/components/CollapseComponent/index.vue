@@ -1,49 +1,46 @@
 <template>
-    <div class="collapse-component">
-        <button @click="toogle" class="collapse-activator button">
-            <slot name="activator"></slot>
-        </button>
-        <div v-if="isCollapsed" class="collapse-content">
-            <slot name="content"></slot>
-        </div>
+  <div>
+    <slot name="activator" :is-collapsed="isCollapsed" :toggle="toggle">
+    </slot>
+    <div>
+      <slot name="content" v-if="!isCollapsed"></slot>
     </div>
+  </div>
 </template>
 
 <script>
+import { String } from 'core-js';
 
 export default {
   name: 'CollapseComponent',
   props: {
-    Collapse: {
+    collapse: {
       type: Boolean,
       default: false,
+    },
+    title: {
+      type: String,
     },
   },
   data() {
     return {
-      isCollapsed: this.Collapse,
+      isCollapsed: this.collapse,
     };
   },
   methods: {
-    toogle() {
+    toggle() {
       this.isCollapsed = !this.isCollapsed;
-      this.$emit('collapseEvent', this.isCollapsed);
+      this.$emit('collapseEvent', this.collapse);
     },
   },
 };
 </script>
 
 <style>
-.collapse-activator {
-    color: brown;
-    font-size: 16px;
-    font-weight: 600;
-}
-
 .collapse-content {
-    padding: 15px;
-    color: rgb(49, 31, 8);
-    font-size: 18px;
-    font-family: '';
+  padding: 15px;
+  color: rgb(49, 31, 8);
+  font-size: 18px;
+  font-family: '';
 }
 </style>
