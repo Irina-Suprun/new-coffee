@@ -4,7 +4,7 @@
       <img src="../assets/gift-card.jpg" alt="gift-card">
     </div>
     <div class="gift-page__collapse">
-      <CollapseComponent collapse @collapseEvent="collapseEvent">
+      <CollapseComponent collapsed @collapseEvent="collapseEvent">
         <template #activator="{ isCollapsed, toggle }">
           <AppButton @click.native="toggle" :title="title">
             {{ title }}
@@ -50,16 +50,6 @@ export default {
   methods: {
     collapseEvent() {
       console.log('here');
-    },
-  },
-  created() {
-    setTimeout(() => {
-      this.title = 'Wow';
-    }, 3000);
-  },
-  watch: {
-    title(val, oldVal) {
-      console.log(val, oldVal);
     },
   },
 };

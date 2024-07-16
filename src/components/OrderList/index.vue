@@ -1,11 +1,6 @@
 <template>
   <ul class="order-section__list list">
-    <OrderItem
-      v-for="item in ListProducts"
-      :key="item.id"
-      :product="item"
-      @update-product="updateProduct"
-    />
+    <OrderItem v-for="item in ListProducts" :key="item.id" :product="item" @update-product="updateProduct" />
   </ul>
 </template>
 

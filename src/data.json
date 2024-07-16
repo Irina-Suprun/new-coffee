@@ -5,7 +5,8 @@
     "productName": "Coffee Retail Packs",
     "productWeight": "500 g",
     "priceBeforeSale": "14.99",
-    "priceCurrent": "10.49"
+    "priceCurrent": "10.49",
+    "availableInventory": "10"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "productName": "Brazil Blend Arabia",
     "productWeight": "500 g",
     "priceBeforeSale": "13.99",
-    "priceCurrent": "11.89"
+    "priceCurrent": "11.89",
+    "availableInventory": "1"
   },
   {
     "id": 3,
@@ -21,6 +23,7 @@
     "productName": "Unicorn Blood Dark",
     "productWeight": "500 g",
     "priceBeforeSale": "16.50",
-    "priceCurrent": "12.38"
+    "priceCurrent": "12.38",
+    "availableInventory": "5"
   }
 ]

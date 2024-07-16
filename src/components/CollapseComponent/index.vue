@@ -14,7 +14,7 @@ import { String } from 'core-js';
 export default {
   name: 'CollapseComponent',
   props: {
-    collapse: {
+    collapsed: {
       type: Boolean,
       default: false,
     },
@@ -24,13 +24,18 @@ export default {
   },
   data() {
     return {
-      isCollapsed: this.collapse,
+      isCollapsed: this.collapsed,
     };
   },
   methods: {
     toggle() {
       this.isCollapsed = !this.isCollapsed;
       this.$emit('collapseEvent', this.collapse);
+    },
+  },
+  watch: {
+    collapsed(value) {
+      this.isCollapsed = value;
     },
   },
 };

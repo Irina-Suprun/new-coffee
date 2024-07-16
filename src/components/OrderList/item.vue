@@ -12,7 +12,8 @@
         <li>{{ product.priceCurrent | formatPrice }}</li>
       </ul>
       <div class="order-section__counter">
-        <button @click="increaseClickHandler" class="order-section__counter-active">+</button>
+        <button @click="increaseClickHandler" v-show="canAddProductToOrder"
+          class="order-section__counter-active">+</button>
         <span class="order-section__counter-number"> {{ counter }} </span>
         <button @click="decreaseClickHandler" class="order-section__counter-active">-</button>
       </div>
@@ -40,6 +41,11 @@ export default {
     formatPrice(price) {
       if (!parseInt(price, 10)) { return ''; }
       return `$  ${price}`;
+    },
+  },
+  computed: {
+    canAddProductToOrder() {
+      return this.counter < this.product.availableInventory;
     },
   },
   methods: {
