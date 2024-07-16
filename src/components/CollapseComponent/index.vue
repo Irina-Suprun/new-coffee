@@ -35,12 +35,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.collapse-content {
-  padding: 15px;
-  color: rgb(49, 31, 8);
-  font-size: 18px;
-  font-family: '';
-}
-</style>

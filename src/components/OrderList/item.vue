@@ -8,8 +8,8 @@
       <strong class="order-section__title-product"> {{ product.productName }} </strong>
       <p>{{ product.productWeight }}</p>
       <ul class="order-section__price list">
-        <li class="order-section__price-sale">{{ product.priceBeforeSale }}</li>
-        <li>{{ product.priceCurrent }}</li>
+        <li class="order-section__price-sale">{{ product.priceBeforeSale | formatPrice }}</li>
+        <li>{{ product.priceCurrent | formatPrice }}</li>
       </ul>
       <div class="order-section__counter">
         <button @click="increaseClickHandler" class="order-section__counter-active">+</button>
@@ -36,7 +36,12 @@ export default {
       counter: 0,
     };
   },
-
+  filters: {
+    formatPrice(price) {
+      if (!parseInt(price, 10)) { return ''; }
+      return `$  ${price}`;
+    },
+  },
   methods: {
     ...mapMutations(['SET_PRODUCTS_TO_ORDER']),
     increaseClickHandler() {

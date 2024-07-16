@@ -17,7 +17,7 @@
           </AppButton>
         </template>
         <template #content>
-          <div>
+          <div class="gift-page__collapse-content">
             Shopping for someone else but not sure what to give them?
             Give them the gift of choice with a Ratio Gift
             Card.
