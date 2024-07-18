@@ -12,11 +12,16 @@
         <li>{{ product.priceCurrent | formatPrice }}</li>
       </ul>
       <div class="order-section__counter">
-        <button @click="increaseClickHandler" v-show="canAddProductToOrder"
+        <button @click="increaseClickHandler" v-if="canAddProductToOrder"
           class="order-section__counter-active">+</button>
+        <button class="disabled order-section__counter-active" v-else>+</button>
         <span class="order-section__counter-number"> {{ counter }} </span>
         <button @click="decreaseClickHandler" class="order-section__counter-active">-</button>
       </div>
+      <div>
+        <span v-if="!canAddProductToOrder" class="order-section__msg"> We have only {{ counter }}</span>
+      </div>
+
       <button @click="addProductToOrder" class="order-section__btn-add button">Add to card</button>
     </div>
   </li>
