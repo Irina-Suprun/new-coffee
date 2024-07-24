@@ -102,4 +102,17 @@
         }
     }
 
+    .active {
+        background-color: beige;
+    }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3ms ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
 }

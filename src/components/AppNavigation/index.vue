@@ -2,9 +2,7 @@
   <nav class="app-navigation">
     <ul class="app-navigation__list list">
       <li class="app-navigation__item">
-        <router-link to="/" class="link"
-          >Catalogue</router-link
-        >
+        <router-link to="/" class="link">Catalogue</router-link>
       </li>
       <li class="app-navigation__item">
         <router-link to="/delivery" class="link">Delivery</router-link>
@@ -25,5 +23,4 @@ export default {
 };
 </script>
 
-<style lang="scss" src="./index.scss">
-</style>
+<style lang="scss" src="./index.scss"></style>

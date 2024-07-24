@@ -3,6 +3,7 @@
     <div class="gift-page__image">
       <img src="../assets/gift-card.jpg" alt="gift-card">
     </div>
+
     <div class="gift-page__collapse">
       <CollapseComponent collapsed @collapseEvent="collapseEvent">
         <template #activator="{ isCollapsed, toggle }">
@@ -17,17 +18,18 @@
           </AppButton>
         </template>
         <template #content>
-          <div class="gift-page__collapse-content">
-            Shopping for someone else but not sure what to give them?
-            Give them the gift of choice with a Ratio Gift
-            Card.
-            Gift cards are delivered by email and contain instructions
-            to redeem them at checkout. Our gift cards have
-            no additional processing fees.
-          </div>
+          <transition name="fade" appear>
+            <div class="gift-page__collapse-content">
+              Shopping for someone else but not sure what to give them?
+              Give them the gift of choice with a Ratio Gift
+              Card.
+              Gift cards are delivered by email and contain instructions
+              to redeem them at checkout. Our gift cards have
+              no additional processing fees.
+            </div>
+          </transition>
         </template>
       </CollapseComponent>
-
     </div>
   </div>
 </template>

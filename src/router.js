@@ -4,6 +4,7 @@ import Catalogue from './Pages/Catalogue.vue';
 import Delivery from './Pages/Delivery.vue';
 import Gift from './Pages/Gift.vue';
 import About from './Pages/About.vue';
+import Order from './Pages/Order.vue';
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,10 @@ const routes = [
   {
     path: '/about',
     component: About,
+  },
+  {
+    path: '/order',
+    component: Order,
   },
 ];
 const router = new VueRouter({

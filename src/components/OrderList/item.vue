@@ -19,10 +19,18 @@
         <button @click="decreaseClickHandler" class="order-section__counter-active">-</button>
       </div>
       <div>
-        <span v-if="!canAddProductToOrder" class="order-section__msg"> We have only {{ counter }}</span>
+        <transition name="bounce" mode="out-in">
+          <span v-if="product.availableInventory - counter === 0" key="0" class="order-section__counter-number">All Out!
+          </span>
+          <span v-else-if="product.availableInventory - counter < 5" key="1" class="order-section__counter-number">
+            Only {{ product.availableInventory - counter }} left!
+          </span>
+          <span v-else key="0" class="order-section__counter-number">Buy Now!
+          </span>
+        </transition>
       </div>
 
-      <button @click="addProductToOrder" class="order-section__btn-add button">Add to card</button>
+      <button @click="addProductToOrder" class="order-section__btn-add button">Add to cart</button>
     </div>
   </li>
 </template>
@@ -73,3 +81,36 @@ export default {
   },
 };
 </script>
+<style scoped>
+.bounce-enter-active {
+  animation: shake 0.72s cubic-bezier(.37, .07, .19, .97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    color: red;
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    color: red;
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+</style>
